@@ -1,5 +1,5 @@
 Function.prototype.myThrottle=function(interval) {
-    let tooSoon = false;
+    let tooSoon;
     let that = this;
     return () => {
         if (tooSoon) {
@@ -16,7 +16,7 @@ Function.prototype.myThrottle=function(interval) {
 
 // class Neuron {
 //     constructor() {
-//         this.fire = this.fire.myThrottle(500);
+        this.fire = this.fire.myThrottle(500);
 //     }
 //     fire() {
 //         console.log("Firing!");

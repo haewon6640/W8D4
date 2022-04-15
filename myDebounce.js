@@ -10,7 +10,7 @@ Function.prototype.myDebounce = function(interval) {
             timeout = setTimeout(() => {
                 this();
             },3000)
-        }git 
+        }
     }
 }
 
